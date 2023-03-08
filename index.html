@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Andre Alvarez - Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=".\css\styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- React JS-->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+ <script src=".\js\index.js"></script>
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+</head>
+<body>
+	<header>
+		<div class="top-nav">
+			<div class="top-nav-icon">
+				<a href="" class="header-logo-link">
+					<label>
+						Andre Alvarez
+					</label>
+				</a>
+			</div>
+			
+			<ul class="top-nav-menu">
+				<li class="hamburger-container">
+					<img src=".\images\hamburger.png" class="hamburger-icon" onclick="expandMenu()">
+				<li name="nav-link-menu" class="nav-link-container" onclick="scrollToAboutMe()">
+					<input type="button" class="top-nav-btn"  value="About Me">
+				</li>
+				<li name="nav-link-menu" class="nav-link-container" onclick="scrollToExperties()">
+					<input type="button" class="top-nav-btn"  value="Expertise">
+				</li>
+				<li name="nav-link-menu" class="nav-link-container" onclick="scrollToContactMe()">
+					<input type="button" class="top-nav-btn"  value="Contact Me">
+				</li>
+
+			</ul>
+
+		</div>
+	</header>
+
+	
+
+	<div class="landing-page-container" id="landing-page-container">
+		<!--<div class="landing-page-img-container">
+				<img class="static landing-page-css-img" src=".\images\css.png"><img class="active landing-page-css-img" src=".\images\css.gif">
+
+		</div>
+-->	
+		<div class="landing-page-text-container">
+			<div class="landing-page-top-subheading">
+				FULL-STACK WEB DEVELOPER
+			</div>
+			<div class="landing-page-heading">
+				Hi, I'm <span class="landing-page-blue">Andre Alvarez</span>
+			</div>
+			<!--<div class="break"></div>-->
+			<div class="landing-page-subheading">
+				This website is dedicated to showcase my web development skills.
+			</div>
+
+
+			<div>
+				<input class="landing-page-btn" id="resume-btn" onclick="download('./document/Resume.pdf','Resume.pdf')" type="button" value="View my Resume" name="">
+				<input class="landing-page-btn" type="button" onclick="scrollToAboutMe()" value="Know more about me!" name="">
+
+			</div>
+	
+
+			<div class="contact-social-media-logo-container">
+				<a href="https://linkedin.com/in/andre-gabriel-alvarez" target="_blank">
+					<img src=".\images\LinkedIn_icon_circle.png"  class="contact-social-media-logo">
+				</a>
+				<div class="tooltip">
+				
+					<img src=".\images\Google__G__Logo.svg.png" class="contact-social-media-logo">
+		
+				<span class="tooltiptext">E-mail me at: andregvalvarez@gmail.com</span>
+				</div>
+				</div>
+
+		</div>
+		<div class="landing-page-portrait-container">
+			<img class="landing-page-portrait" src=".\images\portrait.png">
+		</div>
+	
+	</div>
+
+	<div class="about-me-container" id="about-me-container">
+			<div class="page-heading about-me-heading">
+			<hr class="hr-heading about-me-hr">
+			<div class="page-heading-text">
+				About Me
+			</div>
+			<hr class="hr-heading about-me-hr">
+		</div>
+		<div class="about-me-contents-container">
+			<div>
+				<img class="about-me-img" src=".\images\developer.png">
+			</div>
+			<div class="about-me-text-container">
+				<span class="about-me-subheading">Who am I?</span>
+				I am a full-stack developer with three years of extensive working experience in developing, 
+				improving, and maintaining systems. It includes company landing page, employee 
+				management system and production incident management system. I am seeking to gain 
+				more knowledge and growth towards web development and software engineering.	
+				
+			</div>
+		</div>
+		<div class="about-me-footer">
+			<div class="about-me-footer-text">
+				<span class="about-me-footer-text-bold">3</span>
+				<span class="about-me-footer-text-normal">Years Working Experience</span>
+			</div>
+			<div class="about-me-footer-text">
+				<span class="about-me-footer-text-bold">4</span>
+				<span class="about-me-footer-text-normal">Websites Developed</span>
+			</div>
+			<div class="about-me-footer-text">
+				<span class="about-me-footer-text-bold">+9</span>
+				<span class="about-me-footer-text-normal">Maintained Systems</span>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="career-page-container" id="career-page-container">
+
+		<div class="page-heading">
+			<hr class="hr-heading">
+			<div class="page-heading-text">
+				Expertise
+			</div>
+			<hr class="hr-heading">
+		</div>
+
+		<div class="career-page-card" id="career-page-design-card">
+			<div class="career-page-card-img">
+				<div class="career-page-img career-page-design-img"></div>
+			</div>
+			<div class="career-page-card-text">
+				<div class="career-page-card-heading">
+					Web Design
+				</div>
+				<div class="career-page-card-body">
+						Design prototypes and wireframes to provide exceptional UX and UI. Experienced in photo editing tools to create eye catching graphics and illustrations in the webpage. Study researches to provide empathy to the users to give users a great experience. 
+				</div>
+				<div class="career-page-card-knowledgeable-text">
+					Knowledgeable in:
+				</div>
+				<div class="career-page-card-knowledgeable-icon-container">
+					<div class="career-page-card-knowledgeable-icons-holder">
+						<img src=".\images\Photoshop_2020.png" class="career-page-card-knowledgeable-icons">
+						<label class="career-page-card-knowledgeable-icons-label">PHOTOSHOP</label>
+					</div>
+
+		
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="career-page-card" id="career-page-css-card">
+			<div class="career-page-card-img">
+				<div class="career-page-img career-page-css-img"></div>
+			</div>
+			<div class="career-page-card-text">
+				<div class="career-page-card-heading">
+					Front End Developer
+				</div>
+				<div class="career-page-card-body">
+						Coding designs and interactive elements that can be seen by the client to provide an immersive user experience and beautiful user interface. Develops websites from the proposed or created web design.
+				</div>
+			<div class="career-page-card-knowledgeable-text">
+					Knowledgeable in:
+				</div>
+				<div class="career-page-card-knowledgeable-icon-container">
+						<div class="career-page-card-knowledgeable-icons-holder">
+							<img src=".\images\HTML_Badge.png" class="career-page-card-knowledgeable-icons">
+							<label class="career-page-card-knowledgeable-icons-label">HTML</label>
+						</div>
+						
+						<div class="career-page-card-knowledgeable-icons-holder">
+							<img src=".\images\CSS_Badge.png" class="career-page-card-knowledgeable-icons">
+							<label class="career-page-card-knowledgeable-icons-label">CSS</label>
+						</div>
+						<div class="career-page-card-knowledgeable-icons-holder">
+							<img src=".\images\JavaScript_unofficial_logo.png" class="career-page-card-knowledgeable-icons">
+							<label class="career-page-card-knowledgeable-icons-label">JAVASCRIPT</label>
+						</div>
+
+						
+
+						
+				</div>
+			</div>
+		</div>
+
+
+		<div class="career-page-card" id="career-page-backend-card">
+			<div class="career-page-card-img">
+				<div class="career-page-img career-page-backend-img"></div>
+			</div>
+			<div class="career-page-card-text">
+				<div class="career-page-card-heading">
+					Back End Developer
+				</div>
+				<div class="career-page-card-body">
+						Developing the backbone of the system. Build, maintain and process actions performed from the client side to the server side. Programmable using languages that interacts with the server side and database.
+				</div>
+
+				<div class="career-page-card-knowledgeable-text">
+					Knowledgeable in:
+				</div>
+				<div class="career-page-card-knowledgeable-icon-container">
+					<div class="career-page-card-knowledgeable-icons-holder">
+							<img src=".\images\C_Sharp.png" class="career-page-card-knowledgeable-icons">
+							<label class="career-page-card-knowledgeable-icons-label">ASP.NET</label>
+						</div>
+						
+						<div class="career-page-card-knowledgeable-icons-holder">
+							<img src=".\images\PHP.png" class="career-page-card-knowledgeable-icons">
+							<label class="career-page-card-knowledgeable-icons-label">LARAVEL</label>
+						</div>
+
+						<div class="career-page-card-knowledgeable-icons-holder">
+							<img src=".\images\Sql_data_base.png" class="career-page-card-knowledgeable-icons">
+							<label class="career-page-card-knowledgeable-icons-label">MySQL\MSSQL</label>
+						</div>
+
+
+					
+				</div>
+			</div>
+			
+			</div>
+		</div>
+
+
+		<div class="contact-container" id="contact-container">
+		
+			<div class="page-heading">
+				<hr class="hr-heading">
+				<div class="page-heading-text">
+					Contact Me
+				</div>
+				<hr class="hr-heading">
+			</div>
+			<div class="contact-container">
+			<div class="contact-email-container">
+				<div class="contact-text-container">
+					<label class="contact-textbox-label">Your Name</label>
+					<input class="contact-textbox" id="user-name" type="text" name="">
+				</div>
+				<div class="contact-text-container">
+					<label class="contact-textbox-label">Your E-mail</label>
+					<input class="contact-textbox" id="user-email" type="text" name="">
+				</div>
+			</div>
+			<div class="contact-email-container">
+				<div class="contact-text-container contact-body-textbox-container">
+					<label class="contact-textbox-label">What do you like to say?</label>
+					<textarea class="contact-textbox contact-body-textbox" id="user-message"></textarea>
+					
+				</div>
+			</div>
+
+			<div class="contact-email-container">
+				<div class="contact-text-container">
+					<label class="contact-textbox-label">My E-mail:</label>
+					<label>andregvalvarez@gmail.com</label>
+				</div>
+				<div class="contact-text-container">
+					<input class="contact-submit-button" type="button" onclick="sendEmail()" value="Submit">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,582 @@
+*{
+	margin:0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+html, body {
+  position: relative;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  overflow: auto;
+}
+
+
+
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.top-nav a:link, a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+.header-logo-link{
+	    width: 146px;
+    text-align: center;
+}
+
+.top-nav{
+	display: flex;
+	height: 50px;
+  background-color: white;
+   position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 2;
+  font-size: 18px;
+  border-bottom: 1px solid #e3e3e3;
+
+}
+
+.top-nav-icon{
+	
+	align-items: center;
+	justify-content: center;
+  display: flex;
+}
+
+.top-nav-menu{
+	display: flex;
+	list-style: none;
+	justify-content: right;
+	width: 100%;
+	align-items: center;
+}
+
+.top-nav-btn:hover{
+	color: gray;
+}
+
+
+.top-nav-menu li{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.top-nav-btn{
+	    font-size: unset;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.landing-page-container{
+	display: flex;
+	    align-items: center;
+	height: 900px;
+	position: relative;
+	width: 100%;
+   margin-top: 50px;
+    flex-wrap: wrap;
+  justify-content: space-around;
+    background-image: url(../images/bg-test3.png);
+    background-size: 100% 100%;
+}
+
+.landing-page-img-container{
+	  position: absolute;
+    top: -19vh;
+    right: -10vw;
+
+}
+
+.static {
+  position: absolute;
+  background: white;
+ }
+
+.static:hover {
+  opacity: 0;
+ }
+
+
+.landing-page-blue{
+	color: #41a9a9;
+}
+
+.landing-page-text-container{
+	    flex-direction: column;
+    display: flex;
+    	margin-left: 4vw;
+}
+
+.landing-page-heading{
+	font-size: 3em;
+	font-weight: 500;
+}
+
+.landing-page-top-subheading{
+	font-size: 1.5em;
+	font-weight: 200;
+}
+
+.landing-page-subheading{
+	font-size: 1.25em;
+}
+
+
+.landing-page-portrait-container{
+	
+  justify-content: center;
+  display: flex;
+
+}
+
+.landing-page-portrait{
+	width: 100%;
+	max-width: 380px;
+}
+
+.landing-page-btn{
+	
+	font-size: 1em;
+    background-color: #ffffff;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: black;
+    margin-top: 3vh;
+    border: solid black 1px;
+    font-weight: 500;
+    /*transition: transform 1s;*/
+    -webkit-appearance: none;
+}
+
+
+
+.landing-page-btn:hover{
+		cursor: pointer;
+		background-color: white;
+    color: #64b7be;
+    border: solid #64b7be 1px;
+
+}
+
+.about-me-container{
+	display: flex;
+	flex-wrap: wrap;
+		background-image: url(../images/bg-test5.png);
+    background-size: 100% 100%;
+}
+
+.about-me-contents-container{
+	display: flex;
+	justify-content: space-evenly;
+	    flex-flow: wrap;
+    width: 100%;
+      margin-bottom: 10vh;
+    margin-top: 10vh;
+align-items: center;
+}
+
+.about-me-text-container{
+	    text-align: justify;
+    max-width: 376px;
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    flex-direction: column;
+        justify-content: center;
+}
+
+.about-me-subheading{
+	    font-size: 2em;
+    font-weight: bold;
+}
+
+.about-me-img{
+	width: 100%;
+    max-width: 343px;
+}
+
+
+
+.about-me-heading{
+	color: white;
+
+}
+
+.about-me-hr{
+	border-color: white;
+}
+
+
+.about-me-footer{
+	display: flex;
+    justify-content: center;
+    width: 100%;
+        flex-wrap: wrap;
+    gap: 10vw;
+    margin-bottom: 13vh;
+}
+
+.about-me-footer-text{
+	display: flex;
+	flex-direction: column;
+	    margin-bottom: 42px;
+	    align-items: center;
+}
+
+.about-me-footer-text-bold{
+	text-align: center;
+	font-size: 54px;
+	font-weight: 600;
+}
+
+
+.about-me-footer-text-normal{
+	text-align: center;
+	    font-size: 20px;
+    max-width: 149px;
+    font-weight: 300;
+}
+
+.career-page-container{
+	display: flex;
+	    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.career-page-card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	width: 350px;
+  flex-direction: column;
+      margin-bottom: 8vh;
+    margin-top: 6vh;
+  transition: transform .4s;
+}
+
+.career-page-card-text{
+	text-align: justify;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 35px;
+}
+
+.career-page-card-heading{
+	font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+        margin-bottom: 15px;
+
+}
+
+.career-page-card-knowledgeable-text{
+	    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 38px;
+
+}
+
+.career-page-card-knowledgeable-icon-container{
+	  display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+
+.career-page-card-knowledgeable-icons-holder{
+	display: flex;
+	flex-direction: column;
+}
+
+.career-page-card-knowledgeable-icons{
+	 	max-width: 85px;
+	 	width: 100%;
+	  
+
+}
+
+.career-page-card-knowledgeable-icons-label{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.career-page-card-img{
+	margin-top: 15px;
+  margin-bottom: 20px;
+  
+
+}
+
+.career-page-img{
+	width: 130px;
+  height: 130px;
+}
+
+
+.career-page-card:hover{
+	transform: scale(1.1); 
+}
+
+.career-page-backend-img{
+	background-image: url('../images/coding.png');
+	background-size: cover;
+
+}
+
+
+#career-page-backend-card:hover .career-page-backend-img{
+	background-image: url('../images/coding.gif');
+}
+
+
+.career-page-css-img{
+	background-image: url('../images/css.png');
+	background-size: cover;
+}
+
+
+
+#career-page-css-card:hover .career-page-css-img{
+	background-image: url('../images/css.gif');
+}
+
+.career-page-design-img{
+	background-image: url('../images/monitor.png');
+	background-size: cover;
+}
+
+#career-page-design-card:hover .career-page-design-img{
+	background-image: url('../images/monitor.gif');
+}
+
+
+.page-heading{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page-heading-text{
+	font-size: 2.8em;
+    font-weight: 600;
+        margin-bottom: 7vh;
+    margin-top: 7vh;
+        margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+
+
+.hr-heading{
+      width: 12vw;
+}
+
+
+.contact-container{
+
+	display: flex;
+	width: 100%;
+	background-color: #f4f4f4;
+	justify-content: space-evenly;
+
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.contact-email-container{
+	display: flex;
+	flex-direction: column;
+	    height: 122px;
+	justify-content: space-between;
+	    width: 350px;
+	    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.contact-text-container{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.contact-body-textbox-container{
+	height: 100%;
+}
+
+
+
+.contact-textbox{
+	    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+	width: 335px;
+}
+
+.contact-body-textbox{
+	height: 100%;
+	border: solid 1px;
+}
+
+.contact-textbox-label{
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+
+
+.contact-social-media-container{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-social-media-logo-container{
+	display: flex;
+	    margin-top: 46px;
+	        gap: 13px;
+}
+
+.contact-social-media-logo{
+	width: 34px;
+	cursor: pointer;
+}
+
+.contact-submit-button{
+	height: 49px;
+	    background-color: #64b7be;
+    color: white;
+    border: none;
+}
+
+.contact-submit-button:hover{
+
+	    background-color: #82cad0;
+	    cursor: pointer;
+
+
+}
+
+
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #69b4bb;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext {
+  top: -5px;
+  left: 120%;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #69b4bb transparent transparent;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
+
+.hamburger-icon{
+
+    display: none;
+        height: 25px;
+    padding: 10px;
+}
+
+}
+
+.hamburger-container{
+	height: 100%;
+	    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+@media screen and (max-width: 37.5em) {
+	.top-nav-menu{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-end;
+	}
+	.nav-link-container{
+		display: none;
+		    width: 100%;
+	}
+
+	.about-me-container{
+		    background-size: cover;
+	}
+	.landing-page-container{
+		background-size: cover;
+	}
+
+	.responsive{
+		display: list-item;
+		background-color: white;
+		padding: 16px;
+	}
+
+	.hamburger-icon{
+		display: block;
+	}
+}
